@@ -1,9 +1,7 @@
-# Punto 2: Convertir una cantidad de segundos a horas, minutos y segundos
-segundos_totales = int(input("Ingresá la cantidad de segundos: "))
+# Punto 3: Programa que solicita un número y muestra su tabla de multiplicar del 1 al 10
+numero = int(input("Ingresá un número para ver su tabla de multiplicar: "))
 
-horas = segundos_totales // 3600
-minutos = (segundos_totales % 3600) // 60
-segundos_restantes = segundos_totales % 60
-
-print(f"{segundos_totales} segundos equivalen a:")
-print(f"{horas} horas, {minutos} minutos y {segundos_restantes} segundos.")
+print(f"\nTabla del {numero}:")
+for i in range(1, 11):
+    resultado = numero * i
+    print(f"{numero} x {i} = {resultado}")
